@@ -1,14 +1,14 @@
 # Anti-Theft-Alert-System-using-Tilt-Sensor
 
-## Aim: To measure the tilt Sensor using SW200D with Arduino UNO Board/ESP-32 using Tinker CAD.
+## Aim: 
+To measure the tilt Sensor using SW200D with Arduino UNO Board/ESP-32 using Tinker CAD.
 
 ## Hardware / Software Tools required:
-	PC/ Laptop with Internet connection
-  Tinker CAD tool (Online)
-	Arduino UNO Board/ESP-32
-	Tilt sensor(SW200D)
+PC/ Laptop with Internet connection
 
 ## Circuit Diagram:
+ <img width="1201" height="627" alt="image" src="https://github.com/user-attachments/assets/29c5af7f-7b4d-4938-b15f-6c3b4a6aef85" />
+
  
 ## Theory :
  The Arduino Uno is powered by the ATmega328P, an 8-bit microcontroller that runs at 16 MHz. It has 32 KB of flash memory, 2 KB of SRAM, and 1 KB of EEPROM. The board has 14 digital I/O pins (of which 6 can be used as PWM outputs) and 6 analog input pins. These pins allow the board to interface with various sensors, actuators, and other devices.The Arduino Uno can be powered via a USB connection or an external power supply. The board has a built-in voltage regulator to manage power from 7 to 12 volts.
@@ -20,6 +20,7 @@ The board is programmable using the Arduino IDE (Integrated Development Environm
 Step 1: Set Up the Tinkercad Environment
 •	Log in to Tinkercad: Open Tinkercad in your web browser and log in to your account.
 •	Create a New Circuit: In the Tinkercad dashboard, click on "Circuits" and then select "Create New Circuit."
+
 Step 2: Add Components to the Circuit
 •	Arduino Uno: Drag an Arduino Uno board from the components panel onto the workspace.
 •	SW200D Sensor: Search for the SW200D sensor in the components panel and drag it into the workspace.
@@ -31,30 +32,54 @@ Step 3: Connect the Tilt Sensor (SW-200D) to Arduino:
 •	SW200D Vout (Middle Pin) to Arduino Digital Pin (e.g., D2): Use a wire to connect the middle pin (Vout) of the tilt sensor to a digital input pin on the Arduino.
 •	SW200D GND (One Side Pin) to Breadboard GND Rail: Connect one side pin of the tilt sensor to the ground rail of the breadboard.
 •	SW200D VCC (Other Side Pin) to Breadboard 5V Rail: Connect the other side pin of the tilt sensor to the 5V rail of the breadboard.
+
 Step 4: Write the Arduino Code
 •	Code Editor: Click on the "Code" button at the top of the Tinkercad workspace to open the code editor.
 •	Set the Coding Mode: Ensure the editor is in "Text" mode to write your code in C/C++.
-•	Enter the Code: Write the following code from the SW200D sensor:
+•	Enter the Code: Write the following code from the SW200D sensor
+
 Step 5: Simulate the Circuit
 •	Start Simulation: Click the "Start Simulation" button at the top of the workspace to run the circuit and code.
 •	Monitor Output: Open the serial monitor by clicking the "Serial Monitor" button 
+
 Step 6: Troubleshoot and Refine
 •	Check Connections: Ensure that all connections are made correctly on the breadboard and the Arduino.
 •	Adjust Code: If needed, tweak the code to improve accuracy or change the format of the output.
+
 Step 7: Save Your Work
 •	Stop Simulation: Click "Stop Simulation" to end the simulation.
 •	Save the Circuit: Click "Save" to keep your circuit design and code for future use.
 
 ## Code:
 
+	  // C++ code
+	//
+	void setup()
+	{
+	  pinMode(LED_BUILTIN, OUTPUT);
+	}
+	
+	void loop()
+	{
+	  digitalWrite(LED_BUILTIN, HIGH);
+	  delay(1000); // Wait for 1000 millisecond(s)
+	  digitalWrite(LED_BUILTIN, LOW);
+	  delay(1000); // Wait for 1000 millisecond(s)
+	}
+
 
 
 ## Output:
+
+
+
+https://github.com/user-attachments/assets/ac9b7ee1-3de4-4509-bd08-0365a06ccb51
+
 
  
 
 
 ## Result:
 
-Result: Thus measure the Tilt Sensor using SW200D with Arduino UNO Board/ESP-32 using Tinker CAD has been Verified Successfully.
+Thus measure the Tilt Sensor using SW200D with Arduino UNO Board/ESP-32 using Tinker CAD has been Verified Successfully.
 
